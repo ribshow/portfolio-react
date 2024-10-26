@@ -1,0 +1,46 @@
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blinking-text {
+  animation: blink 2.5s infinite ease-in-out;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 667px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .header {
+    font-size: large;
+  }
+  .logo.php,
+  .logo.csharp,
+  .logo.html,
+  .logo.js {
+    visibility: hidden;
+  }
+
+  .logo.react {
+    width: 34rem;
+    margin-left: 3.12rem;
+  }
+
+  .index {
+    font-size: medium;
+  }
+
+  .read-the-docs {
+    font-size: 14px;
+  }
+}

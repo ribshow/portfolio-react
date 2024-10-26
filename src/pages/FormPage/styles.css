@@ -1,0 +1,85 @@
+.contact {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.container {
+  padding: 10px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.title h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.forms {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.controls {
+  width: 100%;
+  min-height: 70px;
+}
+
+label {
+  font-weight: bold;
+  color: white;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 3px solid #61dafbaa;
+  background-color: #303233;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 180px;
+  padding: 10px;
+  border: 3px solid #61dafbaa;
+  background-color: #303233;
+  color: white;
+}
+
+.btn {
+  background-color: #61dafbaa;
+  width: 100%;
+}
+.m-auto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 667px) {
+  .title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.controls {
+  padding: 5px;
+}
