@@ -2,15 +2,18 @@ import $ from "jquery";
 import "jquery-mask-plugin";
 
 import { useForm, ValidationError } from "@formspree/react";
+import { useEffect } from "react";
 
 export const Form = () => {
+  // validando número de celular
+  useEffect(() => {
+    $("#cell").mask("(00) 0.0000-0000");
+  }, []);
+
   const [state, handleSubmit] = useForm("xovaqyyd");
   if (state.succeeded) {
-    return <p className="blinking-text">Obrigado pela mensagem!</p>;
+    return <p className="blinking-text welcome">Obrigado pela mensagem!</p>;
   }
-
-  // validando o campo número
-  $("#cell").mask("(00) 0.0000-0000");
 
   return (
     <form onSubmit={handleSubmit}>

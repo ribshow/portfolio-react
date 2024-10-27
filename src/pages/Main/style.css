@@ -12,6 +12,22 @@
   animation: blink 2.5s infinite ease-in-out;
 }
 
+/* animation de entrada */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.welcome {
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
 .container {
   display: flex;
   flex-direction: row;

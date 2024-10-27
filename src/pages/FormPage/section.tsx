@@ -11,7 +11,7 @@ interface FormsProps {
 
 export const Section = ({ children }: SectionProps) => {
   return (
-    <section className="contact">
+    <section className="contact welcome">
       <div className="title">
         <h2 className="text-white">Contato</h2>
       </div>

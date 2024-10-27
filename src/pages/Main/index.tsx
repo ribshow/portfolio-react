@@ -9,7 +9,7 @@ import { Footer } from "./footer";
 function IndexPage() {
   return (
     <>
-      <div className="min-h-full">
+      <div className="min-h-full welcome">
         <div className="flex flex-col h-full cont">
           <div className="container flex-grow">
             <div className="">

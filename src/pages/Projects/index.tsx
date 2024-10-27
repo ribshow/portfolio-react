@@ -7,13 +7,15 @@ import { Footer } from "./footer";
 
 export const ProjectsPage = () => {
   return (
-    <div className="projects">
-      <Apigit />
-      <Generate />
-      <Sisedu />
-      <Pi />
+    <>
+      <div className="projects welcome">
+        <Apigit />
+        <Generate />
+        <Sisedu />
+        <Pi />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
