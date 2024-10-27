@@ -17,6 +17,13 @@ export const Navbar = () => {
         <Link to={"/projects"} className="text-center text-blue-400 m-2">
           Projetos
         </Link>
+        <Link
+          to={"https://www.linkedin.com/in/heryson-andrade-1b0918284/"}
+          className="text-center text-blue-400 m-2"
+          target="_blank"
+        >
+          Linkedin
+        </Link>
       </nav>
     </header>
   );

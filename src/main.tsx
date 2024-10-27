@@ -5,7 +5,6 @@ import "./index.css";
 import { AppRoutes } from "./routes.tsx";
 import { BrowserRouter } from "react-router-dom";
 import { Navbar } from "./pages/Main/navbar.tsx";
-//import { Footer } from "./pages/Main/footer.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>

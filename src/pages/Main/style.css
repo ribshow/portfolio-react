@@ -23,14 +23,44 @@
   background-image: url("../../assets/background.svg");
   background-size: cover; /* Faz a imagem cobrir todo o elemento */
   background-repeat: repeat; /* Faz a imagem se repetir */
+  background-color: #303233;
   position: fixed; /* Fixa a posição do background */
-  opacity: calc(50);
   top: 0;
   left: 0;
   width: 100%; /* Ocupa 100% da largura */
   height: 100%; /* Ocupa 100% da altura */
   z-index: -1; /* Coloca o background atrás do conteúdo */
   animation: blink 2.5s infinite ease-in-out; /* Aplica a animação */
+}
+
+/* botão wpp */
+.container-whatsapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  padding: 10px;
+  min-width: 40px;
+  min-height: 40px;
+  z-index: 9999;
+}
+.btn-whatsapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #006414;
 }
 
 @media (max-width: 667px) {
