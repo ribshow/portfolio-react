@@ -12,7 +12,11 @@ export const Form = () => {
 
   const [state, handleSubmit] = useForm("xovaqyyd");
   if (state.succeeded) {
-    return <p className="blinking-text welcome">Obrigado pela mensagem!</p>;
+    return (
+      <p className="blinking-text text-white welcome">
+        Obrigado pela mensagem!
+      </p>
+    );
   }
 
   return (

@@ -7,11 +7,7 @@ export const Navbar = () => {
         <Link to={"/"} className="text-center text-blue-400 m-2">
           Home
         </Link>
-        <Link
-          to={"https://github.com/ribshow"}
-          className="text-center text-blue-400 m-2"
-          target="_blank"
-        >
+        <Link to={"/github"} className="text-center text-blue-400 m-2">
           Github
         </Link>
         <Link to={"/projects"} className="text-center text-blue-400 m-2">
