@@ -16,6 +16,23 @@
   display: flex;
   flex-direction: row;
 }
+
+/* background */
+/* styles.css */
+.background {
+  background-image: url("../../assets/background.svg");
+  background-size: cover; /* Faz a imagem cobrir todo o elemento */
+  background-repeat: repeat; /* Faz a imagem se repetir */
+  position: fixed; /* Fixa a posição do background */
+  opacity: calc(50);
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa 100% da largura */
+  height: 100%; /* Ocupa 100% da altura */
+  z-index: -1; /* Coloca o background atrás do conteúdo */
+  animation: blink 2.5s infinite ease-in-out; /* Aplica a animação */
+}
+
 @media (max-width: 667px) {
   .container {
     width: 100%;
@@ -23,6 +40,7 @@
   }
   .header {
     font-size: large;
+    margin-bottom: 2rem;
   }
   .logo.php,
   .logo.csharp,
