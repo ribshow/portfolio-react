@@ -1,0 +1,17 @@
+.aside {
+  border-right: 1px solid #e1e4e8;
+}
+
+@media (max-width: 667px) {
+  .aside {
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-tutorials {
+    display: flex;
+    flex-direction: column;
+  }
+}

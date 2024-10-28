@@ -1,8 +1,8 @@
-import reactLogo from "../../assets/react.svg";
-import csharpLogo from "../../assets/csharp-logo.svg";
-import jsLogo from "../../assets/javascript-logo.svg";
-import htmlLogo from "../../assets/html5-logo.svg";
-import phpLogo from "../../assets/php-logo.svg";
+import reactLogo from "../../../assets/react.svg";
+import csharpLogo from "../../../assets/csharp-logo.svg";
+import jsLogo from "../../../assets/javascript-logo.svg";
+import htmlLogo from "../../../assets/html5-logo.svg";
+import phpLogo from "../../../assets/php-logo.svg";
 
 export const Logos = () => {
   return (

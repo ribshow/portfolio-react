@@ -1,15 +1,17 @@
 import "./style.css";
-import { Apigit } from "./apps/api-github";
-import { Generate } from "./apps/generate";
-import { Sisedu } from "./apps/sis-edu";
-import { Pi } from "./apps/pi";
-import { Footer } from "./footer";
+import { Apigit } from "./components/api-github";
+import { Generate } from "./components/generate";
+import { Sass } from "./components/sass";
+import { Sisedu } from "./components/sis-edu";
+import { Pi } from "./components/pi";
+import { Footer } from "./components/footer";
 
 export const ProjectsPage = () => {
   return (
     <>
       <div className="projects welcome">
         <Apigit />
+        <Sass />
         <Generate />
         <Sisedu />
         <Pi />

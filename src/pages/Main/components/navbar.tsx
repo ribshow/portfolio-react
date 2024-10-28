@@ -13,6 +13,9 @@ export const Navbar = () => {
         <Link to={"/projects"} className="text-center text-blue-400 m-2">
           Projetos
         </Link>
+        <Link to={"/tutorials"} className="text-center text-blue-400 m-2">
+          Tutoriais
+        </Link>
         <Link
           to={"https://www.linkedin.com/in/heryson-andrade-1b0918284/"}
           className="text-center text-blue-400 m-2"

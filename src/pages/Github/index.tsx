@@ -1,7 +1,7 @@
-import Repos from "./repos";
-import Footer from "../Projects/footer";
+import Repos from "./components/repos";
+import Footer from "../Projects/components/footer";
 
-export const Github = () => {
+export const GithubPage = () => {
   return (
     <>
       <div className="welcome">
@@ -15,4 +15,4 @@ export const Github = () => {
   );
 };
 
-export default Github;
+export default GithubPage;

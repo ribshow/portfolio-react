@@ -1,7 +1,7 @@
-import { Section, Forms } from "../FormPage/section";
-import { Form } from "../FormPage/forms";
+import { Section, Forms } from "./components/section";
+import { Form } from "./components/forms";
 import "./styles.css";
-import { Footer } from "./footer";
+import { Footer } from "./components/footer";
 
 export default function FormPage() {
   return (

@@ -85,7 +85,7 @@
     flex-direction: column;
   }
   .header {
-    font-size: large;
+    font-size: small;
     margin-bottom: 2rem;
   }
   .logo.php,
