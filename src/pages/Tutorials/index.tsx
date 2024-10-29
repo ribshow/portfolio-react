@@ -1,4 +1,5 @@
-import { Aside } from "./components/accordion/section1";
+import { Aside } from "./aside";
+//import { Asidejs } from "./components/js-accordion/section";
 import { Title } from "./components/title";
 import "./style.css";
 
@@ -7,9 +8,13 @@ import { useState, lazy, Suspense } from "react";
 const loadComponent = (tutorialName: string) => {
   switch (tutorialName) {
     case "Instalando sass":
-      return lazy(() => import("./components/accordion/install-sass"));
+      return lazy(() => import("./components/css-accordion/install-sass"));
     case "Footer responsivo":
-      return lazy(() => import("./components/accordion/footer-responsive"));
+      return lazy(() => import("./components/css-accordion/footer-responsive"));
+    case "Conversão de fuso horário":
+      return lazy(
+        () => import("./components/js-accordion/timezone-conversion")
+      );
     default:
       return null;
   }

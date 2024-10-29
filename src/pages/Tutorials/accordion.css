@@ -6,6 +6,16 @@
   margin-left: 0.3rem;
 }
 
+.accordion-item[data-state="open"] {
+  height: auto;
+  transition: height 0.3s ease;
+}
+
+.accordion-item[data-state="closed"] {
+  height: 3rem;
+  transition: height 0.3s ease;
+}
+
 @media (max-width: 667px) {
   /* Menu Accordions */
   .accordiom-item {
