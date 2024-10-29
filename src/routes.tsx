@@ -4,7 +4,7 @@ import IndexPage from "./pages/Main/index";
 import FormPage from "./pages/FormPage";
 import ProjectsPage from "./pages/Projects";
 import GithubPage from "./pages/Github";
-//import TutorialsPage from "./pages/Tutorials";
+import TutorialsPage from "./pages/Tutorials";
 
 export const AppRoutes = () => {
   return (
@@ -13,6 +13,7 @@ export const AppRoutes = () => {
       <Route path="/form" element={<FormPage />} />
       <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/github" element={<GithubPage />} />
+      <Route path="/tutorials" element={<TutorialsPage />} />
     </Routes>
   );
 };

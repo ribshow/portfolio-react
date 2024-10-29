@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
+    "@radix-ui/react-accordion": "^1.2.1",
     "jquery": "^3.7.1",
     "jquery-mask-plugin": "^1.14.16",
     "react": "^18.3.1",

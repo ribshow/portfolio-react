@@ -1,0 +1,29 @@
+.accordion-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  margin-left: 0.3rem;
+}
+
+@media (max-width: 667px) {
+  /* Menu Accordions */
+  .accordiom-item {
+    width: 305px;
+  }
+  .accordion-trigger {
+    width: auto;
+  }
+  .accordion-content {
+  }
+  .btn-content {
+    width: 290px;
+  }
+  .btn-content:hover {
+    width: 100%;
+  }
+
+  .container-tutorial {
+    flex-direction: column;
+  }
+}

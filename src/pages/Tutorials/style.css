@@ -2,16 +2,47 @@
   border-right: 1px solid #e1e4e8;
 }
 
+.tutorials-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 90vh;
+}
+
+.pass {
+  width: 450px;
+  height: auto;
+  padding: 0.5rem;
+  border: 1px solid white;
+  background-color: white;
+  opacity: calc(0.9);
+}
+
 @media (max-width: 667px) {
   .aside {
     border-right: none;
     display: flex;
     flex-direction: column;
+    position: initial;
     justify-content: center;
+    align-items: center;
   }
 
+  .container-principal {
+    min-height: 100vh;
+  }
   .container-tutorials {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .tutorials-title {
+    width: 100%;
+  }
+
+  .pass {
+    width: 100%;
+    height: auto;
   }
 }
