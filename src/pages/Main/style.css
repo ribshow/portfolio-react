@@ -45,7 +45,7 @@
 /* background */
 /* styles.css */
 .background {
-  background-image: url("../../assets/background.svg");
+  background-image: url("../../assets/background-tech.jpg");
   background-size: cover; /* Faz a imagem cobrir todo o elemento */
   background-repeat: repeat; /* Faz a imagem se repetir */
   background-color: #303233;

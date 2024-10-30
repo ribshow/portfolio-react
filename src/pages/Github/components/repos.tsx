@@ -47,7 +47,7 @@ export const Repos = () => {
   const repos = repositories.map((repo: Repository) => {
     return (
       <div
-        className="w-full flex flex-col justify-center border h-56 border-blue-500"
+        className="w-full flex flex-col bg-gray-900 justify-center border h-56 border-blue-500"
         key={repo.id}
       >
         <h3 className="text-blue-400 text-lg m-2">{repo.name}</h3>

@@ -4,6 +4,7 @@
   align-items: center;
   min-width: 100%;
   margin-left: 0.3rem;
+  background-color: #1a1a1a;
 }
 
 .accordion-item[data-state="open"] {
@@ -20,9 +21,6 @@
   /* Menu Accordions */
   .accordion-item {
     width: 305px;
-  }
-  .accordion-trigger {
-    width: auto;
   }
   .accordion-content {
   }

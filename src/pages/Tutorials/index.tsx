@@ -20,6 +20,8 @@ const loadComponent = (tutorialName: string) => {
       return lazy(() => import("./components/laravel-accordion/laravel-mix"));
     case "Criando aplicação CRUD(MongoDB)":
       return lazy(() => import("./components/csharp-accordion/crud-mongodb"));
+    case "Criando um projeto React/typescript":
+      return lazy(() => import("./components/react-accordion/install-react"));
     default:
       return null;
   }

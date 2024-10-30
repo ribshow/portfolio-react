@@ -1,7 +1,7 @@
 export const MongoDB = () => {
   const videoId = "w8D2SzjiE3w";
   return (
-    <div className="video-container">
+    <div className="video-container p-4 w-full">
       <iframe
         width="100%"
         height="400"

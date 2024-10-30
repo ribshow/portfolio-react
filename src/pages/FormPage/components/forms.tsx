@@ -31,7 +31,12 @@ export const Form = () => {
             id="name"
             required
           />
-          <ValidationError prefix="Name" field="name" errors={state.errors} />
+          <ValidationError
+            className="text-white"
+            prefix="Name"
+            field="name"
+            errors={state.errors}
+          />
         </div>
 
         <div className="controls">
@@ -44,6 +49,7 @@ export const Form = () => {
             required
           />
           <ValidationError
+            className="text-white"
             prefix="Last-name"
             field="last-name"
             errors={state.errors}
@@ -61,7 +67,12 @@ export const Form = () => {
             id="email"
             required
           />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <ValidationError
+            className="text-white"
+            prefix="Email"
+            field="email"
+            errors={state.errors}
+          />
         </div>
 
         <div className="controls">
@@ -73,7 +84,12 @@ export const Form = () => {
             id="cell"
             required
           />
-          <ValidationError prefix="Cell" field="cell" errors={state.errors} />
+          <ValidationError
+            className="text-white"
+            prefix="Cell"
+            field="cell"
+            errors={state.errors}
+          />
         </div>
       </div>
 
@@ -88,6 +104,7 @@ export const Form = () => {
             rows={10}
           ></textarea>
           <ValidationError
+            className="text-white"
             prefix="Message"
             field="message"
             errors={state.errors}
