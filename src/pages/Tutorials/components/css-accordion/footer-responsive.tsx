@@ -20,22 +20,6 @@ export const Tutorial2 = () => {
             &#125;
           </p>
         </div>
-        <div className="flex justify-center">
-          <p className="text-center text-white p-2">
-            Alternativamente você pode tentar o seguinte:
-          </p>
-        </div>
-        <div className="pass rounded-xl flex justify-center">
-          <p className="pass-container text-blue-500 font-bold rounded-xl p-2">
-            main &#123; <br />
-            min-height: 100vh <br />
-            &#125; <br />
-            footer &#123; <br />
-            margin-top: auto; <br />
-            height: 100vh <br />
-            &#125;
-          </p>
-        </div>
       </div>
     </div>
   );

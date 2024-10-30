@@ -7,7 +7,7 @@ interface SectionProps {
   onShowTutorial: (tutorialName: string) => void;
 }
 
-export const Section1: React.FC<SectionProps> = ({ onShowTutorial }) => {
+export const SectionCss: React.FC<SectionProps> = ({ onShowTutorial }) => {
   interface Data {
     title: string;
     content: string;
@@ -26,8 +26,9 @@ export const Section1: React.FC<SectionProps> = ({ onShowTutorial }) => {
   return (
     <Accordion.Item className="accordion-item w-full p-2" value="item-1">
       <Accordion.Trigger className="accordion-trigger justify-between">
-        <div className="flex w-full justify-between">
-          {installSass.title} <FaChevronCircleDown className="m-1" />
+        <div className="flex text-blue-400 w-full justify-between">
+          {installSass.title}{" "}
+          <FaChevronCircleDown className="m-1 text-blue-400" />
         </div>
       </Accordion.Trigger>
       <Accordion.Content className="accordion-content block w-full text-left p-2">
@@ -52,4 +53,4 @@ export const Section1: React.FC<SectionProps> = ({ onShowTutorial }) => {
   );
 };
 
-export default Section1;
+export default SectionCss;

@@ -3,13 +3,13 @@ import "./style.css";
 import { Logos } from "./components/logos";
 import { Title } from "./components/title";
 import { Card } from "./components/card";
-import { Wpp } from "./components/wpp";
 import { Footer } from "./components/footer";
+import Wpp from "./components/wpp";
 
 function IndexPage() {
   return (
     <>
-      <div className="min-h-full welcome">
+      <div className="min-h-full welcome container-index">
         <div className="h-full cont">
           <div className="container flex-grow">
             <div className="">
@@ -19,8 +19,8 @@ function IndexPage() {
           </div>
         </div>
         <Card />
-        <Wpp />
       </div>
+      <Wpp />
       <Footer />
     </>
   );

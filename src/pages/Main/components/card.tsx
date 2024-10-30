@@ -10,8 +10,10 @@ export const Card = () => {
 
   return (
     <div className="card flex flex-col items-center justify-center p-4">
-      <button className="bg-neutral-800" onClick={onClick}>
-        <span className="blinking-text text-blue-400">Fale comigo!</span>
+      <button className="bg-neutral-800 btn-contact" onClick={onClick}>
+        <span className="blinking-text hover:animate-none text-blue-400">
+          Fale comigo!
+        </span>
       </button>
     </div>
   );

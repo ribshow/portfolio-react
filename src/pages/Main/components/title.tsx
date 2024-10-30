@@ -1,6 +1,6 @@
 export const Title = () => {
   return (
-    <div className="flex justify-end p-1">
+    <div className="flex justify-end">
       <div className="text-right">
         <div className="logo">
           <h1 className="text-white index">Heryson Andrade</h1>

@@ -7,35 +7,36 @@ interface SectionProps {
   onShowTutorial: (tutorialName: string) => void;
 }
 
-export const SectionJS: React.FC<SectionProps> = ({ onShowTutorial }) => {
+export const SectionCsharp: React.FC<SectionProps> = ({ onShowTutorial }) => {
   interface Data {
     title: string;
     content: string;
   }
 
-  const [datajs] = useState<Data>({
-    title: "JavaScript",
-    content: "Conversão de fuso horário",
+  const [datalaravel] = useState<Data>({
+    title: "C#",
+    content: "Criando aplicação CRUD(MongoDB)",
   });
 
   return (
-    <Accordion.Item className="accordion-item w-full p-2" value="item-2">
+    <Accordion.Item className="accordion-item w-full p-2" value="item-4">
       <Accordion.Trigger className="accordion-trigger justify-between">
-        <div className="flex w-full text-blue-400 justify-between">
-          {datajs.title} <FaChevronCircleDown className="m-1 text-blue-400" />
+        <div className="flex text-blue-400 w-full justify-between">
+          {datalaravel.title}{" "}
+          <FaChevronCircleDown className="m-1 text-blue-400" />
         </div>
       </Accordion.Trigger>
       <Accordion.Content className="accordion-content block w-full text-left p-2">
         <Link
           to={"/tutorials"}
           className="text-white block w-full text-left hover:text-blue-300 btn-content"
-          onClick={() => onShowTutorial(datajs.content)}
+          onClick={() => onShowTutorial(datalaravel.content)}
         >
-          {datajs.content}
+          {datalaravel.content}
         </Link>
       </Accordion.Content>
     </Accordion.Item>
   );
 };
 
-export default SectionJS;
+export default SectionCsharp;

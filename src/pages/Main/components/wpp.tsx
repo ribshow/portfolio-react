@@ -1,4 +1,4 @@
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Wpp = () => {
@@ -10,6 +10,13 @@ export const Wpp = () => {
         className="btn-whatsapp"
       >
         <FaWhatsapp className="text-white w-16 btn-whatsapp" />
+      </Link>
+      <Link
+        to={"https://www.linkedin.com/in/heryson-andrade-1b0918284/"}
+        target="_blank"
+        className="btn-linkedin"
+      >
+        <FaLinkedin className="text-white w-16 btn-linkedin rounded-full" />
       </Link>
     </div>
   );

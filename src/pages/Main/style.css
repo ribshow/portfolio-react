@@ -33,6 +33,15 @@
   flex-direction: row;
 }
 
+/* index.tsx */
+.container-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 /* background */
 /* styles.css */
 .background {
@@ -79,10 +88,34 @@
   background-color: #006414;
 }
 
+.btn-linkedin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.btn-linkedin:hover {
+  background-color: #2047f5aa;
+}
+
 @media (max-width: 667px) {
   .container {
     width: 100%;
     flex-direction: column;
+  }
+
+  .container-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .header {
     font-size: small;
@@ -92,7 +125,7 @@
   .logo.csharp,
   .logo.html,
   .logo.js {
-    visibility: hidden;
+    display: none;
   }
 
   .logo.react {
@@ -106,5 +139,41 @@
 
   .read-the-docs {
     font-size: 14px;
+  }
+
+  .btn-whatsapp,
+  .btn-linkedin {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo.csharp,
+  .logo.html,
+  .logo.js,
+  .logo.react,
+  .logo.php {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo.php,
+  .logo.csharp,
+  .logo.html,
+  .logo.js {
+    width: 100%;
+  }
+
+  .container-index {
   }
 }

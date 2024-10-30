@@ -4,13 +4,21 @@ export const Timezone = () => {
       <div className="w-full flex flex-col items-center justify-center">
         <div className="flex justify-center">
           <p className="text-center text-white text-md p-2 container-title">
-            No terminal digite o comando abaixo para instalar o sass
-            globalmente:
+            Para converter do fuso horário UTC, para o de São Paulo:
           </p>
         </div>
         <div className="pass rounded-xl flex justify-center">
           <p className="pass-container text-blue-500 font-bold rounded-xl p-2">
-            npm install -g sass
+            const utcDate = new Date(); <br /> <br />
+            const saoPauloDate = utcDate.toLocaleString("pt-BR", &#123; <br />
+            timeZone: "America/Sao_Paulo", <br /> year: "numeric",
+            <br /> month: "2-digit",
+            <br />
+            day: "2-digit",
+            <br /> hour: "2-digit",
+            <br /> minute: "2-digit",
+            <br /> second: "2-digit"
+            <br /> &#125;); <br />
           </p>
         </div>
       </div>

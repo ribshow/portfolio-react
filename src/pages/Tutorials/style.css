@@ -18,7 +18,89 @@
   opacity: calc(0.9);
 }
 
-@media (max-width: 667px) {
+@media (max-width: 768px) {
+  .aside {
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    position: initial;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion-trigger {
+    width: 70vw;
+  }
+
+  .container-principal {
+    min-height: 100vh;
+  }
+  .container-tutorials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .tutorials-title {
+    width: 100%;
+  }
+
+  .container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pass {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1192px) {
+  .aside {
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    position: initial;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion-trigger {
+    width: 70vw;
+  }
+
+  .container-principal {
+    min-height: 100vh;
+  }
+  .container-tutorials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .tutorials-title {
+    width: 100%;
+  }
+
+  .container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pass {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
   .aside {
     border-right: none;
     display: flex;
@@ -39,6 +121,14 @@
 
   .tutorials-title {
     width: 100%;
+  }
+
+  .container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
 
   .pass {

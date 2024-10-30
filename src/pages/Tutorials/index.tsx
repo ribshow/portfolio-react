@@ -1,6 +1,7 @@
 import { Aside } from "./aside";
 //import { Asidejs } from "./components/js-accordion/section";
 import { Title } from "./components/title";
+//import { FaSearch } from "react-icons/fa";
 import "./style.css";
 
 import { useState, lazy, Suspense } from "react";
@@ -15,6 +16,10 @@ const loadComponent = (tutorialName: string) => {
       return lazy(
         () => import("./components/js-accordion/timezone-conversion")
       );
+    case "Instalando o Laravel Mix":
+      return lazy(() => import("./components/laravel-accordion/laravel-mix"));
+    case "Criando aplicação CRUD(MongoDB)":
+      return lazy(() => import("./components/csharp-accordion/crud-mongodb"));
     default:
       return null;
   }
@@ -33,14 +38,15 @@ export const TutorialsPage = () => {
   return (
     <div className="overflow-auto flex container-principal">
       <div className="container-tutorials flex flex-col justify-center">
-        <Aside onShowTutorial={handleShowTutorial} />
-        {TutorialLazy && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <Title>
+        <Title>
+          <Aside onShowTutorial={handleShowTutorial} />
+
+          {TutorialLazy && (
+            <Suspense fallback={<div className="text-white">Loading...</div>}>
               <TutorialLazy />
-            </Title>
-          </Suspense>
-        )}
+            </Suspense>
+          )}
+        </Title>
       </div>
     </div>
   );

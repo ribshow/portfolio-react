@@ -18,7 +18,7 @@
 
 @media (max-width: 667px) {
   /* Menu Accordions */
-  .accordiom-item {
+  .accordion-item {
     width: 305px;
   }
   .accordion-trigger {
