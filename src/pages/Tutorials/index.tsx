@@ -22,6 +22,10 @@ const loadComponent = (tutorialName: string) => {
       return lazy(() => import("./components/csharp-accordion/crud-mongodb"));
     case "Criando um projeto React/typescript":
       return lazy(() => import("./components/react-accordion/install-react"));
+    case "Instalando Jest":
+      return lazy(() => import("./components/js-accordion/installing-jest"));
+    case "Configurando https para api Node.js":
+      return lazy(() => import("./components/js-accordion/configure-https"));
     default:
       return null;
   }

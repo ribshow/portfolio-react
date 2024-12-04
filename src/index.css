@@ -31,7 +31,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url("../src/assets/background-tech.jpg");
+  background-image: url("../src/assets/background-tech.webp");
   background-size: 100vw;
   top: 0;
   left: 0;

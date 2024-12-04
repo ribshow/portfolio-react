@@ -18,6 +18,16 @@ export const SectionJS: React.FC<SectionProps> = ({ onShowTutorial }) => {
     content: "Conversão de fuso horário",
   });
 
+  const [installJest] = useState<Data>({
+    title: "JavaScript",
+    content: "Instalando Jest",
+  });
+
+  const [configureHttps] = useState<Data>({
+    title: "JavaScript",
+    content: "Configurando https para api Node.js",
+  });
+
   return (
     <Accordion.Item className="accordion-item w-full p-2" value="item-2">
       <Accordion.Trigger className="accordion-trigger justify-between">
@@ -32,6 +42,24 @@ export const SectionJS: React.FC<SectionProps> = ({ onShowTutorial }) => {
           onClick={() => onShowTutorial(datajs.content)}
         >
           {datajs.content}
+        </Link>
+      </Accordion.Content>
+      <Accordion.Content className="accordion-content block w-full text-left p-2">
+        <Link
+          to={"/tutorials"}
+          className="text-white block w-full text-left hover:text-blue-300 btn-content"
+          onClick={() => onShowTutorial(installJest.content)}
+        >
+          {installJest.content}
+        </Link>
+      </Accordion.Content>
+      <Accordion.Content className="accordion-content block w-full text-left p-2">
+        <Link
+          to={"/tutorials"}
+          className="text-white block w-full text-left hover:text-blue-300 btn-content"
+          onClick={() => onShowTutorial(configureHttps.content)}
+        >
+          {configureHttps.content}
         </Link>
       </Accordion.Content>
     </Accordion.Item>

@@ -14,6 +14,21 @@ export const Tutorial1 = () => {
           </p>
         </div>
       </div>
+      <div className="w-full flex flex-col items-center justify-center">
+        <div className="flex justify-center">
+          <p className="text-center text-white text-md p-2 container-title">
+            Edite seu package.json, para compilar o sass da seguinte forma:
+          </p>
+        </div>
+        <div className="pass rounded-xl flex justify-center">
+          <p className="pass-container text-blue-500 font-bold rounded-xl p-2">
+            "scripts": &#123; <br />
+            "sass": "sass --watch ./public/chat.scss ./public/css/chat.css"{" "}
+            <br />
+            &#125;
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
